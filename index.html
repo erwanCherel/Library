@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>my library</h1>
+        <button class="btn login" type="button">Login</button>
+      </div>
+    </header>
+
+    <button class="btn newBookBtn" onclick="newBook()">+ add a book</button>
+
+    <div>
+      <div class="form-popup" id="myForm">
+        <form action="" method="post" class="form-container" id="form">
+          <div id="formTitle">New Book</div>
+
+          <div>
+            <input
+              class="input"
+              id="title"
+              type="text"
+              name="title"
+              value=""
+              placeholder="title"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              class="input"
+              id="author"
+              type="text"
+              name="author"
+              placeholder="author"
+              value=""
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              class="input"
+              id="pages"
+              type="text"
+              name="pages"
+              placeholder="pages"
+              value=""
+              maxlength="5"
+              required
+            />
+          </div>
+
+          <div id="checkbox">
+            <label for="read"><b>Have you read this book?</b></label>
+            <input id="read" type="checkbox" name="read" />
+          </div>
+
+          <div id="formButtons">
+            <button
+              type="button"
+              class="btn"
+              id="closeWindow"
+              onclick="windowClose()"
+            >
+              Cancel
+            </button>
+
+            <button type="submit" class="btn addBook">Add book</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="cards"></div>
+
+    <footer class="footer">
+      <p>Copyright © erwanCherel</p>
+      <a href="https://github.com/erwanCherel" target="_blank">
+        <img src="./assets/github_icon.svg" alt="github icon" />
+      </a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
